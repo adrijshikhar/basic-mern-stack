@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
 const passport = require('passport');
@@ -20,8 +21,8 @@ app.use(bodyParser.json());
 
 app.use('/api/users', users);
 
-app.get('/', function (req, res) {
-    res.send('hello');
+app.get('/', (req, res) => {
+res.sendFile(path.join(__dirname,'public','index.html'));
 });
 
 const PORT = process.env.PORT || 5000;
