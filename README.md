@@ -3,6 +3,7 @@
 1. Go to the backend folder and start the app by
 
 ```bash
+    npm install
     nodemon app
 ```
 
