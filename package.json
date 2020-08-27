@@ -1,0 +1,26 @@
+{
+  "name": "basic-mern-stack",
+  "version": "1.0.0",
+  "description": "A simple MERN stack implementation",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/adrijshikhar/basic-mern-stack.git"
+  },
+  "author": "Adrij Shikhar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/adrijshikhar/basic-mern-stack/issues"
+  },
+  "homepage": "https://github.com/adrijshikhar/basic-mern-stack#readme",
+  "devDependencies": {
+    "npm-run-all": "^4.1.5"
+  },
+  "scripts": {
+    "dev:fe": "cd frontend && npm start",
+    "dev:be": "cd backend && npm run server",
+    "ins:fe": "cd frontend && npm install",
+    "ins:be": "cd backend && npm install",
+    "dev": "run-p dev:fe dev:be",
+    "setup": "run-s ins:fe ins:be",
+  }
+}
